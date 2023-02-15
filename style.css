@@ -388,6 +388,10 @@ MODAL
     z-index: -1;
 }
 
+.modal__overlay--visible {
+    z-index: 1;
+}
+
 .modal__overlay--loading {
     background-color: #242424;
     font-size: 80px; 
