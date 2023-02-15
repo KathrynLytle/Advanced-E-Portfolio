@@ -82,18 +82,51 @@
             <h3 class="modal__title modal__title--about">Here's a bit more about me.</h3>
             <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
             <p class="modal__para">
-                I'm a 23 year-old American <span class="green">frontend software engineer</span> who enjoys developing useful websites with amazing <span class="green">user experiences.</span>
+                I'm a 23 year-old <b class="green">frontend software engineer</b> who enjoys developing websites with amazing <b class="green">user experiences.</b>
                 <br>
-                While I obtained my bachelor's degree in nursing from the University of Kansas in 2021, I have currently been working on extremely difficult engineering problems and continue to develop my skills from <span class="green">talented</span> and <span class="green">experienced</span> software engineers every day. 
+                While I obtained my bachelor's degree in nursing from the University of Kansas in 2021, I have currently been working on extremely difficult engineering problems and continue to develop my skills from <b class="green">talented</b> and <b class="green">experienced</b> software engineers every day. 
             </p>
-            <div class="modeal__languages">
+            <div class="modal__languages">
                 <figure class="modal__language">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1920px-HTML5_logo_and_wordmark.svg.png" alt="">
-
+                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" alt="">
+                    <span class="language__name">HTML</span>
+            </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/640px-CSS3_logo.svg.png" alt="">
+                    <span class="language__name">CSS</span>
+            </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png" alt="">
+                    <span class="language__name">JavaScript</span>
+            </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="">
+                    <span class="language__name">React</span>
             </figure>
             </div>
         </div>
-        <div class="modal__half modal__contact">Let's have a chat!</div>
+        <div class="modal__half modal__contact">
+            <h3 class="modal__title modal__title--contact">
+                Let's have a chat!
+            </h3>
+            <h4 class="modal__sub-title modal__sub-title--contact">
+                I'm currently open to new opportunities. 
+            </h4>
+            <form id="contact__form" action="">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input" name="user_name" type="text" required>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input class="input" name="user_email" type="text" required>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <input class="input" name="message" type="text" required>
+                </div>
+            </form>
+        </div>
       </div>
     </section>
     <section id="projects">
