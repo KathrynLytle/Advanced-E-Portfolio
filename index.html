@@ -41,14 +41,14 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black
@@ -65,7 +65,7 @@
             I'm a <b class="green">Frontend Software Engineer</b> who finds joy
             in creating responsive web applications with great user experiences.
             <br />
-            Here's a bit more <b class="green">about me</b>.
+            Here's a bit more <b class="green click" onclick="toggleModal()">about me</b>.
           </p>
           <div class="social__list">
             <a href="https://google.com" target="_blank" class="social__link click">
@@ -80,7 +80,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -93,7 +93,7 @@
             <p class="modal__para">
                 I'm a 23 year-old <b class="green">frontend software engineer</b> who enjoys developing websites with amazing <b class="green">user experiences.</b>
                 <br>
-                While I obtained my bachelor's degree in nursing from the University of Kansas in 2021, I have currently been working on extremely difficult engineering problems and continue to develop my skills from <b class="green">talented</b> and <b class="green">experienced</b> software engineers every day. 
+                While I obtained my bachelor's degree in nursing, I have currently been working on extremely difficult engineering problems and continue to develop my skills from <b class="green">talented</b> and <b class="green">experienced</b> software engineers every day. 
             </p>
             <div class="modal__languages">
                 <figure class="modal__language">
@@ -115,12 +115,12 @@
             </div>
         </div>
         <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             <h3 class="modal__title modal__title--contact">
                 Let's have a chat!
             </h3>
             <h4 class="modal__sub-title modal__sub-title--contact">
-                I'm currently open to new opportunities. 
-            </h4>
+                I'm currently open to new opportunities.</h4>
             <form id="contact__form" onsubmit="contact(event)">
                 <div class="form__item">
                     <label class="form__item--label">Name</label>
@@ -145,7 +145,6 @@
                 Thanks for the message! Looking forward to speaking with you soon. 
             </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
     </section>
     <section id="projects">
